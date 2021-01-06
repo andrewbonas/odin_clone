@@ -1,0 +1,38 @@
+.d-flex, .flex-center, .flex-end, .flex-j-center {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.flex-center {
+  align-items: center; }
+
+.logo-text {
+  color: #cc9543;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.1px; }
+
+.nav {
+  justify-content: space-evenly;
+  padding: 10px 90px 10px 90px; }
+
+.nav-list {
+  width: 65%; }
+
+.flex-end {
+  justify-content: flex-end; }
+
+.flex-j-center {
+  justify-content: center; }
+
+li {
+  padding: 5px; }
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: none; } }
+@media (min-width: 768px) {
+  .fa-bars {
+    display: none; } }
+
+/*# sourceMappingURL=styles.css.map */
