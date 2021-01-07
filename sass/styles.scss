@@ -1,6 +1,14 @@
 $gold-color: #cc9543;
+$blue-color: #6abfc3;
 
+@font-face {
+  font-family: Norse;
+  src: url("assets/Norsebold.otf") format("opentype");
+}
 
+.text-gold {
+  color: #cc9543;
+}
 .d-flex {
   display: flex;
   flex-wrap: wrap;
@@ -12,25 +20,10 @@ $gold-color: #cc9543;
   align-items: center;
 }
 
-.logo-text {
-color: $gold-color;
-font-family: 'Amatic SC', cursive;
-font-size: 2.5rem;
-letter-spacing: 0.1px;
-}
-.nav {
-  justify-content: space-evenly;
-  padding: 10px 90px 10px 90px;
-}
-.nav-list {
-  width: 65%;
-
-}
 .flex-end {
   @extend .d-flex;
   justify-content: flex-end;
 }
-
 .flex-j-center {
   @extend .d-flex;
   justify-content: center;
@@ -38,6 +31,68 @@ letter-spacing: 0.1px;
 
 li {
   padding: 5px;
+}
+
+.w-40 {
+  width: 40%;
+}
+.w-100 {
+  width: 100%;
+}
+
+.m-auto {
+  margin: auto;
+}
+.logo-text {
+font-family: Norse, Arial;
+font-size: 1.6rem;
+letter-spacing: 0.4px;
+padding-left: 0.5em;
+}
+
+.nav {
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.main-landing {
+  padding: 50px 10px 50px 10px;
+  text-align: center;
+}
+
+button {
+  padding: 1rem 3.5rem;
+  background-color: $blue-color;
+  border-radius: 5px;
+  border: $blue-color;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+  font-size: 1em;
+  margin-top: 50px;
+}
+
+.hero {
+  width: 100%;
+}
+
+.how, .how-p {
+  text-align: center;
+  font-size: 1.125rem;
+  letter-spacing: 0.2px;
+  padding-top: 50px;
+}
+
+.main-cards {
+  padding: 50px;
+  text-align: center;
+}
+
+.main-card-learn img , .main-card-build img, .main-card-connect img {
+  height: 165px;
+  margin: 50px 0 50px;
+}
+
+.main-card-learn h3 , .main-card-build h3, .main-card-connect h3 {
+  margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
