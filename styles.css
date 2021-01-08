@@ -59,7 +59,8 @@ button {
 .hero {
   width: 100%; }
 
-.how, .how-p {
+.how,
+.how-p {
   text-align: center;
   font-size: 1.125rem;
   letter-spacing: 0.2px;
@@ -108,7 +109,8 @@ button {
   width: 67%; }
 
 .success-stories {
-  margin-top: 40px; }
+  margin-top: 40px;
+  background-image: linear-gradient(to bottom, #fff, #eee); }
 
 .success-story {
   margin: 40px 90px 40px 90px; }
@@ -118,6 +120,24 @@ button {
   border-radius: 50%;
   height: 50px;
   margin: 0 10px 80px 10px; }
+
+.success-footer {
+  margin: auto;
+  text-align: center;
+  padding: 50px; }
+
+footer {
+  padding-top: 50px; }
+
+.success-footer a {
+  display: inline-block;
+  margin-bottom: 80px; }
+
+.social-tags i {
+  padding: 20px; }
+
+.web-map ul {
+  padding: 50px; }
 
 @media (min-width: 992px) {
   .fa-bars {
