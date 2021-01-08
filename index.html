@@ -6,72 +6,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/2953fa26a1.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="grid_framework/main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <title>Odin Clone</title>
 </head>
 
 <body>
-<nav>
-<section class="grid">
-  <div class="nav column-5 column-sm-8 flex-center">
-    <div class="logo flex-center">
-    <img src="assets/odin-logo.svg" alt="Odin Logo">
-    <span class="logo-text font-bold text-gold">THE ODIN PROJECT</span>
-  </div>
+  <nav>
+    <section class="grid">
+      <div class="nav column-5 column-sm-8 flex-center">
+        <div class="logo flex-center">
+          <img src="assets/odin-logo.svg" alt="Odin Logo">
+          <span class="logo-text font-bold text-gold">THE ODIN PROJECT</span>
+        </div>
+      </div>
+      <div class="nav-list column-7 m-auto font-bold">
+        <ul class="flex-end text-muted">
+          <li class="nav-item">All Paths</li>
+          <li class="nav-item">Community</li>
+          <li class="nav-item">About</li>
+          <li class="nav-item">FAQ</li>
+          <li class="nav-item">|</li>
+          <li class="nav-item">Sign Up</li>
+          <li class="nav-item">Log In</li>
+        </ul>
+      </div>
+      <div class="column-sm-4 flex-end flex-center text-muted">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+    </section>
+  </nav>
+
+  <section class="main-landing grid">
+    <div class="column-12 flex-j-center">
+      <h1 class="text-gold font-bold">Your Career in Web Development Starts Here</h1>
+      <h3 class="text-muted">Our full stack curriculum is free and supported by a passionate open source community.</h3>
     </div>
-  <div class="nav-list column-7 m-auto font-bold">
-    <ul class="flex-end text-muted">
-      <li class="nav-item">All Paths</li>
-      <li class="nav-item">Community</li>
-      <li class="nav-item">About</li>
-      <li class="nav-item">FAQ</li>
-      <li class="nav-item">|</li>
-      <li class="nav-item">Sign Up</li>
-      <li class="nav-item">Log In</li>
-    </ul>
-  </div>
-  <div class="column-sm-4 flex-end flex-center text-muted">
-    <i class="fa fa-bars" aria-hidden="true"></i>
-  </div>
-</section>
-</nav>
+    <div class="column-12 flex-j-center">
+      <button class="text-white font-bold">View Full Curriculum</button>
+    </div>
+  </section>
+  <img class="hero" src="assets/main.svg">
 
-<section class="main-landing grid">
-  <div class="column-12 flex-j-center">
-    <h1 class="text-gold font-bold">Your Career in Web Development Starts Here</h1>
-    <h3 class="text-muted">Our full stack curriculum is free and supported by a passionate open source community.</h3>
+  <div class="how">
+    <h2 class="text-dark font-bold flex-j-center">How it works</h2>
+    <p class="how-p w-40 m-auto text-muted">This is the website we wish we had when we were learning on our own. We
+      scour the internet looking for only the best resources to supplement your learning and present them in a logical
+      order.</p>
   </div>
-  <div class="column-12 flex-j-center">
-  <button class="text-white font-bold">View Full Curriculum</button>
-  </div>
-</section>
-<img class="hero" src="assets/main.svg">
 
-<div class="how column-8">
-  <h2 class="column-8 text-dark font-bold flex-j-center">How it works</h2>
-  <p class="how-p w-40 m-auto text-muted">This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
-</div>
+  <div class="main-cards m-auto grid">
+    <div class="main-card m-auto column-4 column-sm-12">
+      <img src="assets/book.svg" alt="Book">
+      <h3 class="font-bold">Learn</h3>
+      <p class="text-muted">Learn from a curriculum with the best curated online tutorials, blogs, and courses.</p>
+    </div>
+    <div class="main-card m-auto column-4 column-sm-12 ">
+      <img src="assets/computer.svg" alt="Computer">
+      <h3 class="font-bold">Build</h3>
+      <p class="text-muted">Build dozens of portfolio-worthy projects along the way, from simple scripts to full
+        programs and deployed websites.</p>
+    </div>
+    <div class="main-card m-auto column-4 column-sm-12">
+      <img src="assets/connect.svg" alt="Connect">
+      <h3 class="font-bold">Connect</h3>
+      <p class="text-muted">You’re not alone. Learn and get help from our friendly community of beginner and experienced
+        developers.</p>
+    </div>
+  </div>
 
-<div class="main-cards m-auto grid">
-  <div class="main-card-learn m-auto column-4 column-sm-12">
-    <img src="assets/book.svg" alt="Book">
-    <h3 class="font-bold">Learn</h3>
-    <p class="text-muted">Learn from a curriculum with the best curated online tutorials, blogs, and courses.</p>
+  <div class="learn-images bg-light">
+    <h2 class="text-dark font-bold flex-j-center">How it works</h2>
+    <div class="grid">
+      <div class="learn-image m-auto bg-white column-4 column-md-6 column-sm-12">
+        <img src="assets/badge-html-css.svg" alt="HTML">
+        <h3 class="text-dark">HTML + CSS</h3>
+      </div>
+      <div class="learn-image m-auto bg-white column-4 column-md-6 column-sm-12 ">
+        <img src="assets/badge-javascript.svg" alt="Javascript">
+        <h3 class="text-dark">Javascript</h3>
+      </div>
+      <div class="learn-image m-auto bg-white column-4 column-md-6 column-sm-12">
+        <img src="assets/badge-git.svg" alt="Git">
+        <h3 class="text-dark">GIT</h3>
+      </div>
+      <div class="learn-image m-auto bg-white column-4 column-md-6 column-sm-12">
+        <img src="assets/badge-database.svg" alt="HTML">
+        <h3 class="text-dark">DATABASES</h3>
+      </div>
+      <div class="learn-image m-auto bg-white column-4 column-md-6 column-sm-12 ">
+        <img src="assets/badge-ruby.svg" alt="Javascript">
+        <h3 class="text-dark">RUBY</h3>
+      </div>
+      <div class="learn-image m-auto bg-white column-4 column-md-6 column-sm-12">
+        <img src="assets/badge-ruby-on-rails.svg" alt="Git">
+        <h3 class="text-dark">RUBY ON RAILS</h3>
+      </div>
+      <div class="learn-image m-auto bg-white column-6 column-md-6 column-sm-12">
+        <img src="assets/badge-nodejs.svg" alt="HTML">
+        <h3 class="text-dark">NODEJS</h3>
+      </div>
+      <div class="learn-image m-auto bg-white column-6 column-md-6 column-sm-12 ">
+        <img src="assets/badge-getting-hired.svg" alt="Javascript">
+        <h3 class="text-dark">GETTING HIRED</h3>
+      </div>
+    
   </div>
-  <div class="main-card-build m-auto column-4 column-sm-12 ">
-    <img src="assets/computer.svg" alt="Book">
-    <h3 class="font-bold">Build</h3>
-    <p class="text-muted">Build dozens of portfolio-worthy projects along the way, from simple scripts to full programs and deployed websites.</p>
   </div>
-  <div class="main-card-connect m-auto column-4 column-sm-12">
-    <img src="assets/connect.svg" alt="Book">
-    <h3 class="font-bold">Connect</h3>
-    <p class="text-muted">You’re not alone. Learn and get help from our friendly community of beginner and experienced developers.</p>
-  </div>
-</div>
-
 </body>
 
 </html>
