@@ -5,7 +5,9 @@ $blue-color: #6abfc3;
   font-family: Norse;
   src: url("assets/Norsebold.otf") format("opentype");
 }
-
+.bg-gold {
+  background-color: $gold-color;
+}
 .text-gold {
   color: #cc9543;
 }
@@ -100,9 +102,15 @@ button {
 .main-card p {
   font-size: 20px;
 }
-
 .learn-images {
-padding: 110px 200px 0 200px;
+  padding-top: 60px;
+}
+
+.grid-learn-images {
+  width: 850px;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .learn-image img {
@@ -121,16 +129,47 @@ padding: 110px 200px 0 200px;
 
 }
 
-
-
-@media (max-width: 768px) {
-  .nav-list {
-    display: none;
-  }
+.learn-image-last {
+  width: 67%;
+}
+.success-stories {
+  margin-top: 40px;
+}
+.success-story {
+  margin: 40px 90px 40px 90px;
 }
 
-@media (min-width: 768px) {
+.success-story img {
+  float: left;
+  border-radius: 50%;
+  height: 50px;
+  margin: 0 10px 80px 10px;
+}
+
+//large
+@media (min-width: 992px) {
   .fa-bars {
     display: none;
   }
 }
+
+
+//medium
+@media (min-width: 768px) and (max-width: 991.9px) {
+  .fa-bars {
+    display: none;
+  }
+  .grid-learn-images {
+    width: 560px;
+  }
+}
+
+//small
+@media (max-width: 767.9px) {
+  .nav-list {
+    display: none;
+  }
+
+}
+
+
