@@ -5,12 +5,15 @@ $blue-color: #6abfc3;
   font-family: Norse;
   src: url("assets/Norsebold.otf") format("opentype");
 }
+
 .bg-gold {
   background-color: $gold-color;
 }
+
 .text-gold {
   color: #cc9543;
 }
+
 .d-flex {
   display: flex;
   flex-wrap: wrap;
@@ -38,6 +41,7 @@ li {
 .w-40 {
   width: 40%;
 }
+
 .w-100 {
   width: 100%;
 }
@@ -45,6 +49,9 @@ li {
 .m-auto {
   margin: auto;
 }
+
+/* Navbar */
+
 .logo-text {
   font-family: Norse, Arial;
   font-size: 1.6rem;
@@ -56,6 +63,8 @@ li {
   justify-content: space-evenly;
   margin-top: 20px;
 }
+
+/* Main */
 
 .main-landing {
   padding: 50px 10px 50px 10px;
@@ -76,6 +85,8 @@ button {
   width: 100%;
 }
 
+/* How it works */
+
 .how,
 .how-p {
   text-align: center;
@@ -91,18 +102,21 @@ button {
   text-align: center;
 }
 
-.main-card img {
-  height: 165px;
-  margin: 50px 0 50px;
+.main-card {
+  img {
+    height: 165px;
+    margin: 50px 0 50px;
+  }
+  h3 {
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 20px;
+  }
 }
 
-.main-card h3 {
-  margin-bottom: 30px;
-}
+/* You will learn */
 
-.main-card p {
-  font-size: 20px;
-}
 .learn-images {
   padding-top: 60px;
 }
@@ -118,6 +132,7 @@ button {
   height: 150px;
   margin: auto;
 }
+
 .learn-image {
   display: flex;
   flex-direction: column;
@@ -132,6 +147,9 @@ button {
 .learn-image-last {
   width: 67%;
 }
+
+/* Success stories */
+
 .success-stories {
   margin-top: 40px;
   background-image: linear-gradient(to bottom, #fff, #eee);
@@ -152,6 +170,9 @@ button {
   text-align: center;
   padding: 50px;
 }
+
+/* Footer */
+
 footer {
   padding-top: 50px;
 }
@@ -168,26 +189,31 @@ footer {
   padding: 50px;
 }
 
-//large
+/* Large */
 @media (min-width: 992px) {
   .fa-bars {
     display: none;
   }
 }
 
-//medium
+/* Medium */
 @media (min-width: 768px) and (max-width: 991.9px) {
   .fa-bars {
     display: none;
   }
-  .grid-learn-images {
+  .grid-learn-images,
+  .learn-image-last {
     width: 560px;
   }
 }
 
-//small
+/* Small */
 @media (max-width: 767.9px) {
   .nav-list {
     display: none;
+  }
+  .grid-learn-images,
+  .learn-image-last {
+    width: 100%;
   }
 }
